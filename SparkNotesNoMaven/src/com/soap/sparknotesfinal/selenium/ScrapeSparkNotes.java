@@ -80,6 +80,7 @@ public class ScrapeSparkNotes {
     }catch(NoSuchElementException e){
         System.out.println("The book title that you entered does not seem to be getting any good matches. Make sure that the book exists on SparkNotes and try again");
     }
+        driver.close();
         return sub;
     }
 }
